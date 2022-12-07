@@ -29,6 +29,7 @@ fi
 cd "$(dirname "$0")"
 
 main() {
+	cd $GITHUB_WORKSPACE
 	/usr/bin/otel-builder --config $INPUT_MANIFEST --output-path $INPUT_OUTPUTPATH
 }
 
