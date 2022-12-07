@@ -1,0 +1,12 @@
+name: Github action PoC to build any Otel Collector from a manifest
+inputs:
+  manifest:
+    description: Manifest local path
+    required: true
+  outputpath:
+    description: Path to place the binaries
+    required: true
+
+runs:
+  using: docker
+  image: Dockerfile
