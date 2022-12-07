@@ -30,7 +30,7 @@ cd "$(dirname "$0")"
 
 main() {
 	cd $GITHUB_WORKSPACE
-	/usr/bin/otel-builder --config $INPUT_MANIFEST --output-path $INPUT_OUTPUTPATH
+	/usr/bin/otel-builder --config $INPUT_LOCAL_MANIFEST --output-path $INPUT_LOCAL_OUTPUT_PATH
 }
 
 main "$@"

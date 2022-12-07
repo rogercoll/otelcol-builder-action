@@ -1,10 +1,10 @@
 name: Github action PoC to build any Otel Collector from a manifest
 inputs:
-  manifest:
-    description: Manifest local path
+  local_manifest:
+    description: Local manifest file path
     required: true
-  outputpath:
-    description: Path to place the binaries
+  local_output_path:
+    description: Local path to put the generated files into
     required: true
 
 runs:
