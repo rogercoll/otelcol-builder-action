@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: rogercoll/otelcol-builder-action@main
         with:
-          manifest: './distributions/otelcol/manifest.yaml'
-          outputpath: './build'
+          local_manifest: './distributions/otelcol/manifest.yaml'
+          local_output_path: './build'
       - run: ls -al build/
 ```
