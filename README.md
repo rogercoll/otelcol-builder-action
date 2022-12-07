@@ -4,7 +4,7 @@ Configuration is going to break.
 
 ## Usage
 
-```
+```yaml
 jobs:
   buildOtel:
     name: Build custom Otel collector from a manifest
